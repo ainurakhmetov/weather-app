@@ -67,7 +67,7 @@ class MainPage extends React.Component {
     handleChangeIndex = index => {
         this.setState({
             index,
-        }, () => console.log(this.state.index));
+        });
     };
     fetch = () => {
         axios
@@ -76,7 +76,7 @@ class MainPage extends React.Component {
                 this.setState({
                     data: response.data,
                     error: false,
-                },() => console.log(this.state.data));
+                });
             })
             .catch(() => {
                 this.setState({

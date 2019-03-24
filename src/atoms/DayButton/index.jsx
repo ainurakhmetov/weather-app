@@ -1,13 +1,13 @@
 import React from 'react';
 import styled from 'styled-components';
-import WeatherIcon from "../WeatherIcon";
+import ButtonIcon from "../ButtonIcon";
 
 const ComponentWrapper = styled.button`
     border:none;
     outline: inherit;
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 33.333vw;
     height: 100%;
     align-items: center;
     justify-content: center;
@@ -19,7 +19,7 @@ const Day = styled.span`
     color: #fff;
     margin: 0;
      @media (min-width: 481px) {
-            font-size: 16px;
+            font-size: 14px;
       }
 `;
 
@@ -28,7 +28,7 @@ const DayButton = ({day, icon, style, btn}) => (
         style={style}
         onChange={btn}
     >
-        <WeatherIcon
+        <ButtonIcon
             icon={icon}
         />
         <Day>

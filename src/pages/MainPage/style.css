@@ -17,3 +17,6 @@
 .rc-tabs-bottom .rc-tabs-nav-swipe .rc-tabs-nav .rc-tabs-tab {
     padding: 0;
 }
+.rc-tabs-content .rc-tabs-tabpane {
+    overflow: visible;
+}

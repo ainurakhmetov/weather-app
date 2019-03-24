@@ -76,15 +76,14 @@ class MainPage extends React.Component {
                 <div>
                     <Tabs
                         tabBarPosition="bottom"
-                        data-extra="tabs"
                         onChange={this.handleChangeIndex}
                         renderTabBar={() =>
-                            <SwipeableInkTabBar
-                                pageSize={3}
-                                speed={5}
-                            />
+                          <SwipeableInkTabBar
+                             pageSize={3}
+                             speed={5}
+                          />
                         }
-                        renderTabContent={() => <TabContent animated={true}/>}
+                        renderTabContent={() => <TabContent />}
                         defaultActiveKey={defaultTabKey}
                     >
                         {this.makeMultiTabPane(3)}
